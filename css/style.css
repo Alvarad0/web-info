@@ -68,6 +68,7 @@ nav {
 
 .enlaces-header {
     font-weight: 300;
+    transition: ease-in-out 0.5s;
 }
 
 .nav .enlaces-header a {
@@ -455,11 +456,28 @@ footer {
     }
 
     .enlaces-header {
-        display: none;
+        background: #fff;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        -webkit-clip-path: circle(0.0% at 100% 0);
+        clip-path: circle(0.0% at 100% 0);
+    }
+
+    .nav .menudos {
+        -webkit-clip-path: circle(133% at 100% 0);
+        clip-path: circle(150% at 100% 0);
     }
 
     .hamburguer {
         display: block;
+        cursor: pointer;
     }
 
     /* About Us */
